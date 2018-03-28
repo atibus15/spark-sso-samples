@@ -15,7 +15,10 @@ Server-side (Node.JS) and client-side sample apps demonstrating OAuth2 with Cisc
 1. Create a Cisco Spark 'integration' type application: https://developer.ciscospark.com/apps.html
   * Specify two 'Redirect URI's: http://localhost:8080/oauth and http://localhost:8080/client-side.html
   * Keep the 'Client ID' and 'Client Secret' values visble
-2. Use Git to clone the code repo to a directory on your PC, from a terminal window: `git clone https://github.com/CiscoDevNet/spark-sso-samples.git`
+2. Use Git to clone the code repo to a directory on your PC, from a terminal window: 
+  ```
+  git clone https://github.com/CiscoDevNet/spark-sso-samples.git
+  ```
 3. Change into the repo directory and ask NPM to install needed dependencies:
   ```
   cd spark-sso-samples
@@ -29,3 +32,5 @@ Server-side (Node.JS) and client-side sample apps demonstrating OAuth2 with Cisc
     CLIENT_ID={your client id} CLIENT_SECRET={your client secret} node server.js
     ```
 7. In a browser, open http://localhost:8080 to access the server-side sample app, and http://localhost:8080/client-side.html to access the client-side app
+
+> Note: organizations (i.e. Cisco) can enforce a whitelist for OAuth integrations - you may need to create a separate Cisco Spark account with a non-organization email to test logging into your integration
