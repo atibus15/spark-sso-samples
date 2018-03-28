@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Example",
+            "program": "${workspaceFolder}/server.js",
+            "env": {
+                "NODE_ENV": "development",
+                "DEBUG": "oauth*",
+                "PORT": "8080",
+                "REDIRECT_URI": "http://localhost:8080/oauth", 
+                "CLIENT_ID": "Cb0ac0fd12c3e55ac8ea92bcacc0da5b9d94767c615526950dec047a0850ff1a1",
+                "CLIENT_SECRET": "243fe9fdc913b8d8f1a0e3ffb7c0ef5d270f69906f42793350206cc505c3c25d"
+            }
+        }
+    ]
+}
